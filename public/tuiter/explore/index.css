@@ -42,7 +42,6 @@ body {
     color: #6e767d;
 }
 .wd-gear {
-    font-size: 40px;
     margin-right: 12px;
 }
 
@@ -100,7 +99,7 @@ body {
 }
 .wd-title {
     padding-bottom: 5px;
-    font-size: 20px;
+    font-size: 15px;
     font-family: "Arial Black";
 }
 .wd-image-content-left{
