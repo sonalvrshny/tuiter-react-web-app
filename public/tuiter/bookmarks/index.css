@@ -18,7 +18,7 @@ body {
     padding-left: 12px;
     padding-bottom: 12px;
     border-bottom: 1px solid rgb(47,51,54);
-    color: rgb(47,51,54);
+    color: gray;
     font-size: 13px;
 }
 
@@ -45,11 +45,11 @@ body {
 }
 .wd-tuit-handle {
     font-size: 15px;
-    color: rgb(47,51,54);
+    color: gray;
 }
 .wd-tuit-date {
     font-size: 15px;
-    color: rgb(47,51,54);
+    color: gray;
 }
 .wd-tuit-body {
     font-size: 15px;
@@ -78,7 +78,7 @@ body {
     font-size: 15px;
 }
 .wd-tuit-content-2 {
-    color: rgb(47,51,54);
+    color: gray;
 }
 .fa-link{
     color: #6e767d;
@@ -87,7 +87,7 @@ body {
     padding: 12px;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    color: rgb(47,51,54);
+    color: gray;
 }
 .wd-icon-bar a {
     color: lightgray;
@@ -95,7 +95,7 @@ body {
 }
 .wd-icon {
     padding-right: 12px;
-    color: lightgray;
+    color: gray;
 }
 .wd-icon-bar .active{
     color: red;
