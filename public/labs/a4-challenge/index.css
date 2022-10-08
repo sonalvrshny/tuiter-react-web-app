@@ -1,0 +1,30 @@
+.btn-primary.wd-tweet-button {
+    border-radius: 20px;
+}
+
+.fa-cog.wd-cog {
+    font-size: 25px;
+    color: #0d6efd;
+    position: absolute;
+    padding-top: 18px;
+}
+
+.wd-search {
+    position: relative;
+}
+.wd-search .fa-search{
+    position: absolute;
+    top: 12px;
+    left: 16px;
+}
+.wd-search input{
+    text-indent: 50px;
+}
+.form-control.wd-search-bar {
+    border-radius: 20px;
+}
+
+.text-dark.wd-bold {
+    font-weight: 700
+}
+
