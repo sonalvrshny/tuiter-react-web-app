@@ -9,9 +9,10 @@
 </head>
 <body>
 
-<div class="container">
+<div class="container container-fluid">
     <div class="row mt-2">
-        <div class="col-2">
+<!--        LEFT-->
+        <div class="col-2 col-lg-2">
             <!--      Navigation column-->
             <ul class="list-group">
                 <li class="list-group-item">
@@ -22,57 +23,58 @@
                 <li class="list-group-item">
                     <div class="row">
                         <div class="col-1"><i class="fa fa-house fa-1x"></i></div>
-                        <div class="col d-none d-lg-block">Home</div>
+                        <a href="#" class="col d-none d-lg-block text-decoration-none text-dark">Home</a>
                     </div>
                 </li>
                 <li class="list-group-item active">
                     <div class="row">
                         <div class="col-1"><i class="fa fa-hashtag fa-1x"></i></div>
-                        <div class="col d-none d-lg-block">Explore</div>
+                        <a href="#" class="col d-none d-lg-block text-decoration-none text-dark">Explore</a>
                     </div>
                 </li>
                 <li class="list-group-item">
                     <div class="row">
                         <div class="col-1"><i class="fa fa-bell fa-1x"></i></div>
-                        <div class="col d-none d-lg-block">Notifications</div>
+                        <a href="#" class="col d-none d-lg-block text-decoration-none text-dark">Notifications</a>
                     </div>
                 </li>
                 <li class="list-group-item">
                     <div class="row">
                         <div class="col-1"><i class="fa fa-envelope fa-1x"></i></div>
-                        <div class="col d-none d-lg-block">Messages</div>
+                        <a href="#" class="col d-none d-lg-block text-decoration-none text-dark">Messages</a>
                     </div>
                 </li>
                 <li class="list-group-item">
                     <div class="row">
                         <div class="col-1"><i class="fa fa-bookmark fa-1x"></i></div>
-                        <div class="col d-none d-lg-block">Bookmarks</div>
+                        <a href="#" class="col d-none d-lg-block text-decoration-none text-dark">Bookmarks</a>
                     </div>
                 </li>
                 <li class="list-group-item">
                     <div class="row">
                         <div class="col-1"><i class="fa fa-list fa-1x"></i></div>
-                        <div class="col d-none d-lg-block">Lists</div>
+                        <a href="#" class="col d-none d-lg-block text-decoration-none text-dark">Lists</a>
                     </div>
                 </li>
                 <li class="list-group-item">
                     <div class="row">
                         <div class="col-1"><i class="fa fa-user fa-1x"></i></div>
-                        <div class="col d-none d-lg-block">Profile</div>
+                        <a href="#" class="col d-none d-lg-block text-decoration-none text-dark">Profile</a>
                     </div>
                 </li>
                 <li class="list-group-item">
                     <div class="row">
                         <div class="col-1"><i class="fa fa-ellipsis-h fa-1x"></i></div>
-                        <div class="col d-none d-lg-block">More</div>
+                        <a href="#" class="col d-none d-lg-block text-decoration-none text-dark">More</a>
                     </div>
                 </li>
             </ul>
-            <div class="row mt-2 ms-0">
+            <div class="row mt-2 g-0">
                 <button class="btn btn-primary wd-tweet-button">Tweet</button>
             </div>
         </div>
-        <div class="col-7 ">
+<!--        MIDDLE-->
+        <div class="col-10 col-sm-10 col-lg-7">
             <!--      Explore column-->
             <div class="row">
                 <div class="col-11">
@@ -184,7 +186,8 @@
                 </ul>
             </div>
         </div>
-        <div class="col-3">
+<!--        RIGHT-->
+        <div class="col-4 col-lg-3 d-none d-xxl-block d-xl-block d-lg-block d-md-none d-sm-none">
             <!--      Follow list column-->
             <ul class="list-group">
                 <li class="list-group-item">
@@ -195,80 +198,80 @@
             </ul>
             <ul class="list-group">
                 <li class="list-group-item">
-                    <div class="row">
-                        <div class="col-3">
+                    <div class="row flex-nowrap">
+                        <div class="col-2 g-0 ms-2">
                             <img class="img-fluid rounded-circle" src="assets/java-icon.png">
                         </div>
                         <div class="col-6">
                             <div class="text-dark wd-bold">Java</div>
                             <div class="text-dark">@Java</div>
                         </div>
-                        <div class="col-3">
-                            <div class="row">
+                        <div class="col-4">
+                            <div class="row g-0">
                                 <button class="btn btn-primary wd-tweet-button">Follow</button>
                             </div>
                         </div>
                     </div>
                 </li>
                 <li class="list-group-item">
-                    <div class="row">
-                        <div class="col-3">
+                    <div class="row flex-nowrap">
+                        <div class="col-2 g-0 ms-2">
                             <img class="rounded-circle img-fluid" src="assets/relativity-icon.png">
                         </div>
                         <div class="col-6">
                             <div class="text-dark wd-bold">Relativity Space</div>
                             <div class="text-dark">@relativityspace</div>
                         </div>
-                        <div class="col-3">
-                            <div class="row">
+                        <div class="col-4">
+                            <div class="row g-0">
                                 <button class="btn btn-primary wd-tweet-button">Follow</button>
                             </div>
                         </div>
                     </div>
                 </li>
                 <li class="list-group-item">
-                    <div class="row">
-                        <div class="col-3">
+                    <div class="row flex-nowrap">
+                        <div class="col-2 g-0 ms-2">
                             <img class="img-fluid rounded-circle" src="assets/virgin-gal-icon.png">
                         </div>
                         <div class="col-6">
                             <div class="text-dark wd-bold">Virgin Galactic</div>
                             <div class="text-dark">@virgingalactic</div>
                         </div>
-                        <div class="col-3">
-                            <div class="row">
+                        <div class="col-4">
+                            <div class="row g-0">
                                 <button class="btn btn-primary wd-tweet-button">Follow</button>
                             </div>
                         </div>
                     </div>
                 </li>
                 <li class="list-group-item">
-                    <div class="row">
-                        <div class="col-3">
+                    <div class="row flex-nowrap">
+                        <div class="col-2 g-0 ms-2">
                             <img class="img-fluid rounded-circle" src="assets/nasa-icon.png">
                         </div>
                         <div class="col-6">
                             <div class="text-dark wd-bold">NASA</div>
                             <div class="text-dark">@NASA</div>
                         </div>
-                        <div class="col-3">
-                            <div class="row">
+                        <div class="col-4">
+                            <div class="row g-0">
                                 <button class="btn btn-primary wd-tweet-button">Follow</button>
                             </div>
                         </div>
                     </div>
                 </li>
                 <li class="list-group-item">
-                    <div class="row">
-                        <div class="col-3">
+                    <div class="row flex-nowrap">
+                        <div class="col-2 g-0 ms-2">
                             <img class="img-fluid rounded-circle" src="assets/tesla-icon.png">
                         </div>
                         <div class="col-6">
                             <div class="text-dark wd-bold">Tesla</div>
                             <div class="text-dark">@Tesla</div>
                         </div>
-                        <div class="col-3">
-                            <div class="row">
+                        <div class="col-4">
+                            <div class="row g-0">
                                 <button class="btn btn-primary wd-tweet-button">Follow</button>
                             </div>
                         </div>
@@ -278,116 +281,6 @@
         </div>
     </div>
 </div>
-
-
-<!--<div class="wd-top">-->
-<!--  <span class="wd-search-bar">-->
-<!--    <input class="wd-span wd-search" type="text" placeholder="Search Tuiter">-->
-<!--    <div class="wd-gear"><a href="explore-settings.html"><i class="fa fa-cog fa-lg"></i></a></div>-->
-<!--  </span>-->
-
-
-<!--  <div class="wd-nav-bar">-->
-<!--    <div class="wd-nav-bar-tab active"><span><a>For you</a></span></div>-->
-<!--    <div class="wd-nav-bar-tab"><a>Trending</a></div>-->
-<!--    <div class="wd-nav-bar-tab"><a>Covid 19</a></div>-->
-<!--    <div class="wd-nav-bar-tab"><a>News</a></div>-->
-<!--    <div class="wd-nav-bar-tab"><a>Sports</a></div>-->
-<!--    <div class="wd-nav-bar-tab"><a>Entertainment</a></div>-->
-<!--  </div>-->
-<!--</div>-->
-
-<!--<div class="wd-blank-div">-->
-
-<!--</div>-->
-
-<!--<div class="wd-tuits">-->
-<!--  <div class="wd-tuits-content">-->
-<!--    <div class="wd-topic">Trending in Science</div>-->
-<!--    <div class="wd-title">Starship</div>-->
-<!--    <div class="wd-no-of-tuits">55.5k Tuits</div>-->
-<!--  </div>-->
-
-<!--  <div class="wd-tuits-content">-->
-<!--    <div class="wd-topic">Sports &middot; Trending</div>-->
-<!--    <div class="wd-title">Joe Rogan</div>-->
-<!--    <div class="wd-no-of-tuits">5348 Tuits</div>-->
-<!--  </div>-->
-
-<!--  <div class="wd-tuits-content">-->
-<!--    <div class="wd-image-content-left">-->
-<!--      <div class="wd-content-align">-->
-<!--        <div>-->
-<!--          <span class="wd-author-line">-->
-<!--              <img class="wd-author-icon" src="assets/nyt_author.png">-->
-<!--              <span class="wd-author">-->
-<!--                The New York Times-->
-<!--              </span>-->
-<!--              <span class="wd-badge">&#10003;</span>-->
-<!--          </span>-->
-<!--          <span class="wd-topic">-->
-<!--            &middot; Yesterday-->
-<!--          </span>-->
-<!--        </div>-->
-<!--        <div class="wd-title">-->
-<!--          CNN's Cuomo conundrum: A star anchor with a brother in trouble-->
-<!--        </div>-->
-<!--      </div>-->
-<!--      <div class="wd-image-align">-->
-<!--        <img src="assets/cnn_tuit.jpg">-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-
-<!--  <div class="wd-tuits-content">-->
-<!--    <div class="wd-image-content-left">-->
-<!--      <div class="wd-content-align">-->
-<!--        <div class="wd-topic">COVID-19</div>-->
-<!--        <div class="wd-title">News and updated - Massachusetts</div>-->
-<!--      </div>-->
-<!--      <div class="wd-image-align">-->
-<!--        <img src="assets/covid_tuit.png">-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-
-<!--  <div class="wd-tuits-content">-->
-<!--    <div class="wd-image-content-left">-->
-<!--      <div class="wd-content-align">-->
-<!--        <div>-->
-<!--          <span class="wd-author-line">-->
-<!--              <img class="wd-author-icon" src="assets/bloom_author.png">-->
-<!--              <span class="wd-author">-->
-<!--                Bloomberg-->
-<!--              </span>-->
-<!--              <span class="wd-badge">&#10003;</span>-->
-<!--          </span>-->
-<!--          <span class="wd-topic">-->
-<!--            &middot; Yesterday-->
-<!--          </span>-->
-<!--        </div>-->
-<!--        <div class="wd-title">-->
-<!--          Thinking about getting a booster? Go get it!-->
-<!--        </div>-->
-<!--      </div>-->
-<!--      <div class="wd-image-align">-->
-<!--        <img src="assets/booster_tuit.png">-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-
-<!--  <div class="wd-tuits-content">-->
-<!--    <div class="wd-image-content-left">-->
-<!--      <div class="wd-content-align">-->
-<!--        <div class="wd-topic">Entertainment</div>-->
-<!--        <div class="wd-title">New release next month. Watch the Spiderman return</div>-->
-<!--      </div>-->
-<!--      <div class="wd-image-align">-->
-<!--        <img src="assets/spiderman-tuit.jpg">-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</div>-->
 
 </body>
 </html>

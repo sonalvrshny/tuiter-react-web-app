@@ -1,5 +1,4 @@
 .btn-primary.wd-tweet-button {
-    width: 196px;
     border-radius: 20px;
 }
 
@@ -28,7 +27,4 @@
 .text-dark.wd-bold {
     font-weight: 700
 }
-.img-fluid {
-    height: 100%;
-    width: 100%;
-}
+
