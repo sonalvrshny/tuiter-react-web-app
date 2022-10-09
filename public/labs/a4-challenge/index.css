@@ -1,10 +1,55 @@
+.dark {
+    background-color: black;
+    color: white;
+    font-family: Calibri;
+}
+.wd-list-group-text {
+    color: lightgray;
+    font-size: 20px;
+}
+.list-group.wd-left-list-group {
+    --bs-list-group-bg: black;
+    --bs-list-group-color: lightgrey;
+    --bs-list-group-active-bg: black;
+    --bs-list-group-active-border-color: black;
+}
+.nav {
+    justify-content: space-between;
+}
+.nav.wd-nav-tabs {
+    --bs-nav-tabs-link-active-border-bottom: blue;
+    --bs-nav-link-color: grey;
+    --bs-nav-tabs-link-active-bg: none;
+    --bs-nav-tabs-border-width: none;
+    --bs-nav-tabs-link-active-color: white;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    font-weight: 800;
+    border-bottom: 4px solid rgb(29,161,242);
+    padding-bottom: 10px;
+}
+
+.card {
+    --bs-card-border-color: none;
+}
+.card-img, .card-img-top {
+    height: 500px;
+}
+.wd-text-bold {
+    font-weight: 800;
+}
+
 .btn-primary.wd-tweet-button {
+    color: black;
+    border-color: white;
+    background-color: white;
+    font-weight: 800;
     border-radius: 20px;
 }
 
 .fa-cog.wd-cog {
     font-size: 25px;
-    color: #0d6efd;
+    color: white;
     position: absolute;
     padding-top: 18px;
 }
@@ -21,10 +66,16 @@
     text-indent: 50px;
 }
 .form-control.wd-search-bar {
+    background-color: rgb(24,24,24);
     border-radius: 20px;
+    border-color: black;
 }
 
 .text-dark.wd-bold {
     font-weight: 700
+}
+.list-group.wd-right-list-group {
+    --bs-list-group-bg: rgb(24,24,24);
+    --bs-list-group-border-color: none;
 }
 
