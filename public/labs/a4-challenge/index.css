@@ -38,11 +38,17 @@
 .wd-text-bold {
     font-weight: 800;
 }
-
-.btn-primary.wd-tweet-button {
+.btn-primary.wd-follow-button {
     color: black;
     border-color: white;
     background-color: white;
+    font-weight: 800;
+    border-radius: 20px;
+}
+.btn-primary.wd-tweet-button {
+    background-color: dodgerblue;
+    border-color: dodgerblue;
+    color: white;
     font-weight: 800;
     border-radius: 20px;
 }
