@@ -7,7 +7,7 @@ const PostSummaryListItem = (post) => {
                     <span>
                         <span class="fw-bold">${post.userName}</span>
                         <i class="fa-solid fa-circle-check"></i>
-                        <span class="text-secondary">${post.time}</span>
+                        <span class="text-secondary"> - ${post.time}</span>
                     </span>
                     <div class="fw-bold">${post.title}
                     </div>
