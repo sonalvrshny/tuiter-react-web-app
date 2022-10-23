@@ -23,10 +23,10 @@ const ExploreComponent = () => {
                     <a href = "/" className="nav-link">News</a>
                 </li>
                 <li className="nav-item">
-                    <a href = "/" className="nav-link" href="#">Sports</a>
+                    <a href = "/" className="nav-link">Sports</a>
                 </li>
                 <li className="nav-item d-none d-lg-block">
-                    <a href = "/" className="nav-link" href="#">Entertainment</a>
+                    <a href = "/" className="nav-link">Entertainment</a>
                 </li>
             </ul>
             <div className="card">
