@@ -1,25 +1,30 @@
 import React from "react";
+import {Link} from "react-router-dom";
+import {useLocation} from "react-router-dom";
 
-const NavigationSidebar = (
-    {
-        active='explore'
-    }
-    ) => {
+const NavigationSidebar = () => {
+        const {pathname} = useLocation();
+        const paths = pathname.split('/')
+        const active = paths[2];
+
         return (
             <div className="list-group">
                 <a className="list-group-item">Tuiter</a>
-                <a className={`list-group-item ${active === 'home' ? 'active':''}`}>
+                <Link to="/tuiter/home" className={`list-group-item ${active === 'home' ? 'active':''}`}>
                     <div className="row">
                         <div className="col-1"><i className="bi bi-house-fill position-relative"></i></div>
                         <div className="col d-none d-lg-block">Home</div>
                     </div>
-                </a>
-                <a className={`list-group-item ${active === 'explore' ? 'active':''}`}>
+                </Link>
+                <Link to="/tuiter/explore" className={`list-group-item ${active === 'explore' || active === '' ? 'active':''}`}>
                     <div className="row">
                         <div className="col-1"><i className="bi bi-hash position-relative"></i></div>
                         <div className="col d-none d-lg-block">Explore</div>
                     </div>
-                </a>
+                </Link>
+                <Link to="/" className="list-group-item">
+                    Labs
+                </Link>
                 <a className={`list-group-item ${active === 'notifications' ? 'active':''}`}>
                     <div className="row">
                         <div className="col-1"><i className="bi bi-bell-fill position-relative"></i></div>
