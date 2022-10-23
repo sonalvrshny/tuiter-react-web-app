@@ -14,23 +14,23 @@ const ExploreComponent = () => {
             </div>
             <ul className="nav mb-2 mt-2 nav-tabs">
                 <li className="nav-item">
-                    <a className="nav-link active">For You</a>
+                    <a href = "/" className="nav-link active">For You</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link">Trending</a>
+                    <a href = "/" className="nav-link">Trending</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link">News</a>
+                    <a href = "/" className="nav-link">News</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#">Sports</a>
+                    <a href = "/" className="nav-link" href="#">Sports</a>
                 </li>
                 <li className="nav-item d-none d-lg-block">
-                    <a className="nav-link" href="#">Entertainment</a>
+                    <a href = "/" className="nav-link" href="#">Entertainment</a>
                 </li>
             </ul>
             <div className="card">
-                <img className="card-img-top" src="/images/starship.jpg"/>
+                <img className="card-img-top" src="/images/starship.jpg" alt=""/>
                 <div className="card-img-overlay card-inverse d-flex flex-column justify-content-end">
                     <h4 className="text-white text-bold">
                         SpaceX's Starship

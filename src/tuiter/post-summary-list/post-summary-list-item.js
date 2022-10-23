@@ -25,7 +25,7 @@ const PostSummaryListItem = (
                     </div>
                 </div>
                 <div className="col-2">
-                    <img width={70} className="img-fluid rounded" src={`/images/${post.image}`}/>
+                    <img width={70} className="img-fluid rounded" src={`/images/${post.image}`} alt=""/>
                 </div>
             </div>
         </li>

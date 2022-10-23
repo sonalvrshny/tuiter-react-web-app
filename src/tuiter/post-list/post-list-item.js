@@ -34,7 +34,7 @@ const PostListItem = (
         <li className="list-group-item bg-transparent">
             <div className="row">
                 <div className="col-1 g-0">
-                    <img className="img-fluid rounded-circle" src={`/images/${post.avatarIcon}`}/>
+                    <img className="img-fluid rounded-circle" src={`/images/${post.avatarIcon}`} alt=""/>
                 </div>
                 <div className="col-11">
                     <span>
