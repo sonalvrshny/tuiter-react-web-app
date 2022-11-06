@@ -1,10 +1,12 @@
 import React from "react";
-import PostList from "../post-list/post-list";
+import PostHomeList from "../post-home-list/post-home-list";
+import WhatsHappening from "./whats-happening";
 
 const HomeComponent = () => {
     return(
         <>
-            <PostList/>
+            <WhatsHappening/>
+            <PostHomeList/>
         </>
     );
 };

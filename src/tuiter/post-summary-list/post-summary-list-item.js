@@ -1,16 +1,6 @@
 import React from "react";
 
-const PostSummaryListItem = (
-    {
-        post = {
-            "topic": "Space",
-            "userName": "SpaceX",
-            "time": "2h",
-            "title": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
-            "image": "tesla-icon.png"
-        }
-    }
-) => {
+const PostSummaryListItem = ({post}) => {
     return (
         <li className="list-group-item">
             <div className="row">
