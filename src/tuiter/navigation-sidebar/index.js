@@ -49,12 +49,12 @@ const NavigationSidebar = () => {
                         <div className="col d-none d-lg-block">Lists</div>
                     </div>
                 </a>
-                <a href="/tuiter/profile" className={`list-group-item ${active === 'profile' ? 'active':''}`}>
+                <Link to="/tuiter/profile" className={`list-group-item ${active === 'profile' ? 'active':''}`}>
                     <div className="row">
                         <div className="col-1"><i className="bi bi-person-fill position-relative"></i></div>
                         <div className="col d-none d-lg-block">Profile</div>
                     </div>
-                </a>
+                </Link>
                 <a href="/" className={`list-group-item ${active === 'more' ? 'active':''}`}>
                     <div className="row">
                         <div className="col-1"><i className="bi bi-three-dots position-relative"></i></div>
