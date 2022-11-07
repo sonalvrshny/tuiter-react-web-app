@@ -1,0 +1,21 @@
+.wd-cover-image{
+    width: 100%;
+    height: 200px;
+}
+
+.wd-profile-image{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 190px;
+}
+.wd-tweet-count{
+    font-size: 0.8rem;
+}
+
+.wd-profile-details{
+    margin-top: 7rem;
+}
+.wd-count-details{
+    font-size: 0.8rem;
+}
