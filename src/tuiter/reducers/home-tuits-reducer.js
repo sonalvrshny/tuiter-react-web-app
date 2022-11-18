@@ -1,5 +1,11 @@
 import {createSlice} from "@reduxjs/toolkit";
 import homeTuitsArray from "../data/posts-home.json"
+import {createTuitThunk, deleteTuitThunk, findTuitsThunk, updateTuitThunk} from "../../services/tuits-thunk";
+
+const initialState = {
+    homeTuitsArray: [],
+    loading: false
+}
 
 const currentUser = {
     "userName": "NASA",
@@ -19,7 +25,44 @@ const templateTuit = {
 
 const homeTuitsSlice = createSlice({
     name: 'home-tuits',
-    initialState: homeTuitsArray,
+    initialState,
+    extraReducers: {
+        [findTuitsThunk.pending]:
+            (state) => {
+                state.loading = true
+                state.tuits = []
+            },
+        [findTuitsThunk.fulfilled]:
+            (state, { payload }) => {
+                state.loading = false
+                state.tuits = payload
+            },
+        [findTuitsThunk.rejected]:
+            (state) => {
+                state.loading = false
+            },
+        [deleteTuitThunk.fulfilled] :
+            (state, { payload }) => {
+                state.loading = false
+                state.tuits = state.tuits
+                    .filter(t => t._id !== payload)
+            },
+        [createTuitThunk.fulfilled]:
+            (state, { payload }) => {
+                state.loading = false
+                state.tuits.push(payload)
+            },
+        [updateTuitThunk.fulfilled]:
+            (state, { payload }) => {
+                state.loading = false
+                const tuitIdx = state.tuits
+                    .findIndex((t) => t._id === payload._id)
+                state.tuits[tuitIdx] = {
+                    ...state.tuits[tuitIdx],
+                    ...payload
+                }
+            }
+    },
     reducers: {
         likeToggle(state, action) {
             const post = state.findIndex((post) => post._id === action.payload._id)
@@ -46,5 +89,5 @@ const homeTuitsSlice = createSlice({
     }
 });
 
-export const {likeToggle,createTuit, deleteTuit} = homeTuitsSlice.actions
+export const {likeToggle, createTuit, deleteTuit} = homeTuitsSlice.actions
 export default homeTuitsSlice.reducer;
