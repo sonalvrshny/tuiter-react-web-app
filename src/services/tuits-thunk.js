@@ -2,11 +2,10 @@ import {createAsyncThunk} from "@reduxjs/toolkit"
 import * as service from "./tuits-service"
 
 export const createTuitThunk = createAsyncThunk(
-        'tuits',
-        async (tuit) => {
-            await service.createTuit(tuit)
-            return tuit
-        })
+        'tuits/createTuit',
+        async (thunkAPI) =>
+            await service.createTuit(thunkAPI)
+        )
 
 export const findTuitsThunk = createAsyncThunk(
     'tuits/findTuits', async () =>
