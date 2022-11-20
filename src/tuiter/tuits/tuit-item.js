@@ -5,21 +5,7 @@ import {deleteTuitThunk, updateTuitThunk} from "../../services/tuits-thunk";
 
 
 const TuitItem = ({
-    tuit = {
-        "_id": "123",
-        "topic": "Traffic",
-        "userName": "The Boring Company\"",
-        "time": "2h",
-        "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
-        "avatarIcon": "boring2.jpg",
-        "liked": false,
-        "replies": 123,
-        "retuits": 432,
-        "likes": 2345,
-        "unlikes": 456,
-        "handle": "@boringcompany",
-        "tuit": "The Boring Company (TBC) is an American infrastructure and tunnel construction services company founded by Elon Musk. Its ongoing and proposed projects are designed for intra-city ('loop') transit systems."
-    }
+    tuit
 }) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {

@@ -1,7 +1,7 @@
 import React from "react";
 import TuitStats from "./tuit-stats";
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "../reducers/home-tuits-reducer";
+import {deleteTuit} from "../tuits/tuits-reducer";
 
 
 const PostHomeListItem = ({post}) => {

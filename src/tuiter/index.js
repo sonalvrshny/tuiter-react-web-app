@@ -7,20 +7,21 @@ import ProfileComponent from "./profile";
 import "./index.css";
 import {Route, Routes} from "react-router";
 import whoReducer from "./reducers/who-reducer";
-import tuitsReducer from "./reducers/tuits-reducer";
+import tuitsReducer from "./tuits/tuits-reducer";
 import {configureStore} from "@reduxjs/toolkit";
 import {Provider} from "react-redux";
 import homeTuitsReducer from "./reducers/home-tuits-reducer";
 import ProfileReducer from "./reducers/profile-reducer";
 import EditProfileComponent from "./edit-profile";
 
+
 const store = configureStore(
     {
         reducer: {
             who: whoReducer,
-            tuitsData: tuitsReducer,
             homeTuits: homeTuitsReducer,
-            profileInfo: ProfileReducer
+            profileInfo: ProfileReducer,
+            tuitsData: tuitsReducer
         }
     }
 );
