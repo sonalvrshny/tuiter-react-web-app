@@ -46,7 +46,7 @@ const TuitItem = ({
                     ...tuit,
                     likes: tuit.likes + 1,
                     liked: true
-                }))} className="bi bi-heart-fill fa-sm me-2"></i>}
+                }))} className="bi bi-heart fa-sm me-2"></i>}
                     {tuit.liked &&
                         <i onClick={() => dispatch(updateTuitThunk({
                             ...tuit,
@@ -62,7 +62,7 @@ const TuitItem = ({
                             ...tuit,
                             unlikes: tuit.unlikes + 1,
                             unliked: true
-                        }))} className="bi bi-hand-thumbs-down-fill fa-sm me-2"></i>}
+                        }))} className="bi bi-hand-thumbs-down fa-sm me-2"></i>}
                     {tuit.unliked &&
                         <i onClick={() => dispatch(updateTuitThunk({
                             ...tuit,
