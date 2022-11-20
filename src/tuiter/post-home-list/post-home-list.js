@@ -1,5 +1,4 @@
 import React from "react";
-import postsArray from '../data/posts-home.json'
 import {useSelector} from "react-redux";
 import PostHomeListItem from "./post-home-list-item";
 

@@ -1,7 +1,5 @@
 import React from "react";
-// import postsArray from '../data/posts.json'
 import {useSelector} from "react-redux";
-import PostSummaryListItem from "./post-summary-list-item";
 import TuitItem from "../tuits/tuit-item";
 
 const PostSummaryList = () => {
