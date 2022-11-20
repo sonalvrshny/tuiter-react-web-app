@@ -6,7 +6,7 @@ const PostSummaryListItem = ({post}) => {
             <div className="row">
                 <div className="col-10">
                     <span>
-                        <span className="text-secondary">{post.userName}</span>
+                        <span className="text-secondary">{post.username}</span>
                         <i className="fa-solid fa-circle-check"></i>
                         <span className="text-secondary"> - {post.time}</span>
                     </span>

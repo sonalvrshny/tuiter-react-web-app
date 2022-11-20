@@ -11,6 +11,7 @@ const TuitItem = ({
     const deleteTuitHandler = (id) => {
         dispatch(deleteTuitThunk(id))
     }
+
     return (
         <li className="list-group-item bg-transparent">
             <div className="row">
@@ -19,7 +20,7 @@ const TuitItem = ({
                 </div>
                 <div className="col-11">
                     <span>
-                        <span className="fw-bold">{tuit.userName} </span>
+                        <span className="fw-bold">{tuit.username} </span>
                         <i className="bi bi-patch-check-fill text-primary"></i>
                         <span className="text-secondary"> {tuit.handle}  </span>
                         <span className="text-secondary">
@@ -33,25 +34,44 @@ const TuitItem = ({
             </div>
             <ul className="nav mt-2 nav-fill text-secondary">
                 <li className="nav-item">
-                    <i className="bi bi-chat fa-sm me-2"></i>{tuit.comments}
+                    <i className="bi bi-chat fa-sm me-2"></i>{tuit.replies}
                 </li>
                 <li className="nav-item">
                     <i className="bi bi-repeat fa-sm me-2"></i>{tuit.retuits}
                 </li>
-                <li>
-                    Likes: {tuit.likes}
+
+                <li className="nav-item">
+                    {!tuit.liked &&
                 <i onClick={() => dispatch(updateTuitThunk({
                     ...tuit,
-                    likes: tuit.likes + 1
-                }))} className="bi bi-heart-fill fa-sm me-2"></i>
+                    likes: tuit.likes + 1,
+                    liked: true
+                }))} className="bi bi-heart-fill fa-sm me-2"></i>}
+                    {tuit.liked &&
+                        <i onClick={() => dispatch(updateTuitThunk({
+                            ...tuit,
+                            likes: tuit.likes - 1,
+                            liked: false
+                        }))} className="bi bi-heart-fill fa-sm me-2" style={{'color': 'red'}}></i>}
+                    {tuit.likes}
                 </li>
-                <li>
-                    Unlikes: {tuit.unlikes}
-                    <i onClick={() => dispatch(updateTuitThunk({
-                        ...tuit,
-                        unlikes: tuit.unlikes + 1
-                    }))} className="bi bi-hand-thumbs-down fa-sm me-2"></i>
+
+                <li className="nav-item">
+                    {!tuit.unliked &&
+                        <i onClick={() => dispatch(updateTuitThunk({
+                            ...tuit,
+                            unlikes: tuit.unlikes + 1,
+                            unliked: true
+                        }))} className="bi bi-hand-thumbs-down-fill fa-sm me-2"></i>}
+                    {tuit.unliked &&
+                        <i onClick={() => dispatch(updateTuitThunk({
+                            ...tuit,
+                            unlikes: tuit.unlikes - 1,
+                            unliked: false
+                        }))} className="bi bi-hand-thumbs-down-fill fa-sm me-2" style={{'color': 'blue'}}></i>}
+                    {tuit.unlikes}
                 </li>
+
                 <li className="nav-item">
                     <i className="bi bi-share fa-sm me-2"></i>
                 </li>
