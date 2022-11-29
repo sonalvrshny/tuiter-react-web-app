@@ -5,8 +5,7 @@ import {useLocation} from "react-router-dom";
 const NavigationSidebar = () => {
         const {pathname} = useLocation();
         const paths = pathname.split('/')
-        const active = paths[2];
-
+        const active = paths.length > 2 ? paths[2] : '';
         return (
             <div className="list-group">
                 <a href="/tuiter/home" className="list-group-item">Tuiter</a>

@@ -22,7 +22,7 @@ const TuitItem = ({
                     <span>
                         <span className="fw-bold">{tuit.username} </span>
                         <i className="bi bi-patch-check-fill text-primary"></i>
-                        <span className="text-secondary"> {tuit.handle}  </span>
+                        <span className="text-secondary"> @{tuit.handle}  </span>
                         <span className="text-secondary">
                             <i className="bi bi-dot"></i>{tuit.time}
                         </span>
@@ -32,7 +32,7 @@ const TuitItem = ({
                     <div>{tuit.tuit}</div>
                 </div>
             </div>
-            <ul className="nav mt-2 nav-fill text-secondary">
+            <ul className="nav mt-2 nav-justified text-secondary">
                 <li className="nav-item">
                     <i className="bi bi-chat fa-sm me-2"></i>{tuit.replies}
                 </li>

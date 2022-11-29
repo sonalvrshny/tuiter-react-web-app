@@ -17,7 +17,7 @@ const WhatsHappening = () => {
     return (
         <div className="row">
             <div className="col-auto">
-                <img src="/images/nasa-icon.png" width={60} alt={''}/>
+                <img className="img-fluid rounded-circle" src="/images/zuko-profile.jpeg" width={60} alt={''}/>
             </div>
             <div className="col-10">
        <textarea value={whatsHappening} placeholder="What's happening?"
